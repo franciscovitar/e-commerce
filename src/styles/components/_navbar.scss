@@ -1,0 +1,59 @@
+.navbar_container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+        margin: 0 150px 0 150px;
+        border-bottom: 2px solid $light-grayish-blue;
+    }
+
+    .left {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+
+        img:first-child,
+        Menu {
+            @media (min-width: 1225px) {
+                display: none;
+            }
+
+        }
+
+        .center {
+            @media (max-width: 1225px) {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 20px;
+                color: $grayish-blue;
+                margin-top: 20px;
+
+                li:hover {
+                    border-bottom: 2px solid $orange;
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        button {
+            border: none;
+            background-color: transparent;
+            outline: none;
+        }
+
+        img:last-child {
+            width: 30px;
+        }
+    }
+}

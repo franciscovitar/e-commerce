@@ -1,0 +1,54 @@
+.main-container {
+
+    .carousel-inner {
+
+        border-radius: 20px;
+
+        @media (max-width: 768px) {
+            border-radius: 0
+        }
+
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 74%;
+    }
+
+    .indicators-carousel {
+        @media(max-width: 768px) {
+            display: none;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        button {
+            border: none;
+            padding: 0;
+            margin-top: 40px;
+            background: transparent;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+
+            }
+
+            img:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+    div {
+        div {
+            img {
+                @media(min-width: 768px) {
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}

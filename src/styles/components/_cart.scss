@@ -1,0 +1,133 @@
+.cart-container {
+    padding: 25px;
+
+    @media (min-width: 768px) {
+        padding-top: 0;
+    }
+
+    //Price
+
+
+    .Numbers {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        @media (min-width: 1225px) {
+            display: block;
+            align-items: flex-start;
+            gap: 0;
+        }
+
+        .Numbers-2 {
+            flex-basis: 85%;
+            display: flex;
+            gap: 5px;
+
+            p:first-child {
+                font-weight: bold;
+                font-size: 35px;
+                padding: 0;
+
+            }
+
+            span {
+                background-color: $pale-orange;
+                color: $orange;
+                font-weight: bold;
+                padding: 0 5px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                height: 50%;
+                margin-top: 15px;
+
+
+
+            }
+        }
+
+
+        p:last-child {
+            color: $grayish-blue;
+            font-weight: bold;
+            text-decoration: line-through;
+        }
+
+    }
+
+    //Form
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+
+
+
+        div {
+            background: $light-grayish-blue;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+            @media (min-width: 768px) {
+                padding: 1px;
+            }
+
+            input {
+                border: none;
+                background: $light-grayish-blue;
+                outline: none;
+                font-weight: bold;
+                text-align: center;
+
+                @media (min-width: 768px) {
+                    width: 30%;
+                }
+            }
+
+
+            button {
+                background: transparent;
+
+                img {
+                    width: 20px;
+
+                    @media (min-width: 768px) {
+                        width: 10px;
+                    }
+                }
+            }
+
+        }
+
+        button {
+            background-color: $orange;
+            border: none;
+            color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+            @media (min-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        button:hover {
+            opacity: .6;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.container-modal {
+
+    .modal-content {
+        background: transparent;
+        border: none;
+        width: 100%;
+
+        .modal-header {
+            border: none;
+        }
+
+        .carousel-inner {
+            border-radius: 10px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .indicators-carousel {
+            button {
+                border-radius: 10px;
+                width: 100%;
+            }
+
+            button:hover {
+                background-color: #fff;
+                outline: 2px solid $orange;
+
+            }
+        }
+    }
+
+
+
+}

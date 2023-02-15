@@ -1,0 +1,18 @@
+.App {
+    .contenedor {
+        @media(min-width: 768px) {
+            padding: 80px;
+            gap: 10px;
+            justify-content: center;
+
+            .zapas {
+                width: 500px;
+
+            }
+
+            .texto {
+                width: 580px;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.text-container {
+
+    padding: 25px;
+
+    span {
+        color: $orange;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    h1 {
+        font-weight: bold;
+        margin: 20px 0;
+    }
+
+    p {
+        color: $dark-grayish-blue;
+        font-weight: 600;
+    }
+}
